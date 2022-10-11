@@ -55,7 +55,7 @@ useEffect(() => {
       case '+':
         calc = String(parseFloat(prevState) + parseFloat(currentState))
         break
-      case 'X':
+      case '*':
         calc = String(parseFloat(prevState) * parseFloat(currentState))
         break
       case '-':

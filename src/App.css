@@ -1,5 +1,84 @@
-main {
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-app-region: none;
+}
+
+body{
+  background-color: #1f2641;
+  display: grid;
+  place-content: center;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  font-size: 2rem;
+}
+
+.container{
+  height: 70vh;
+  width: 55vh;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 1.3rem;
+  box-shadow: 7px 7px 5px 0px rgba(50, 30, 50, 0.75)
+}
+
+.wrapper{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.screen{
+  grid-column: 1/-1;
+  color: black;
   text-align: center;
-  vertical-align: center;
-  line-height: 100vh
+  padding: 0.5rem;
+  font-size: 4rem;
+  overflow: hidden;
+  text-align: right;
+}
+
+.btn{
+  display: grid;
+  place-content: center;
+  background-color: rgb(10, 10, 10);
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn:hover{
+  background-color: mediumpurple;
+}
+
+.light-purple{
+  background-color: black;
+  color: white;
+}
+
+.light-purple:hover{
+  background-color: mediumpurple;
+}
+
+.purple{
+  background-color: purple;
+}
+
+.purple:hover{
+  background-color: purple;
+  color: black;
+}
+.zero{
+  grid-column: 1/span 2;
+  border-radius: 25px;
+  place-content: unset;
+  align-items: center;
+  padding-left: 4rem;
 }
